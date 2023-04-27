@@ -1,0 +1,30 @@
+GET http://localhost:3000/user/userProfile
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"sachin_123@gmail.com",
+    "password":"12345678"
+}
+
+###
+//getAllPlans
+GET http://localhost:3000/plans/allPlans
+
+###
+//getplan
+GET http://localhost:3000/plans/plan/643a5072a39e2b7588eb68f9
+###
+//updatePlan
+
+PATCH localhost:3000/plans/crudPlan/643a5072a39e2b7588eb68f9
+Content-Type: application/json
+
+{
+    "name":"SuperDuperFood"
+
+}
+
+###
+GET localhost:3000/reviews/643d1f3212bdee8a4b0de397
